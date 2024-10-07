@@ -1,0 +1,28 @@
+<!-- <!DOCTYPE html>
+
+<title>hello form flask</title>
+{%if person%}
+    <h1>hello {{ person }}!</h1
+{% else %}
+    <h1>hello, world!</h1>
+{%endif%} -->
+
+<!-- <h1>hello {{ user_name | capitalize }} what are you doing in here ? </h1> -->
+<!-- if we want to use all upper or lower in output the code will be like
+<h1>hello {{user_nmae | upper or lower or capitalize}}
+or the first letter will be capital if we use capitalize -->
+
+<p>{{ stuff | title }}</p>
+
+<h1>favourite_colors:</h1>
+
+{% for toppings in favourite_colors %}
+    {% if toppings == 100 %}
+        {{ toppings + 100 }}
+    {% else %}    
+    {{ toppings }}<br/>
+    {% endif %}
+
+{% endfor %}
+
+
